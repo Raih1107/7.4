@@ -18,6 +18,7 @@ function MainApp() {
   useEffect(() => {
     // fetch
     axios.get("https://sum-server.100xdevs.com/notifications")
+    axios.get("http://localhost:8080/notifications")
       .then(res => {
         setNetworkCount(res.data)
       })
